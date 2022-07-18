@@ -78,7 +78,7 @@ class MytestDownloaderMiddleware:
 
     @classmethod
     def from_crawler(cls, crawler):
-        # This method is used by Scrapy to create your spiders......
+        # This method is used by Scrapy to create your spiders....
         s = cls()
         crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)
         return s
